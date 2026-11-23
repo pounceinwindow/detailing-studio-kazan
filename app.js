@@ -53,7 +53,7 @@ zoneOptions.addEventListener('change', ({ target }) => {
   updateZoneStatus();
 });
 
-form.addEventListener('change', ({ target }) => {
+document.querySelector('.estimate-service').addEventListener('change', ({ target }) => {
   if (target.name === 'service') renderZones();
 });
 

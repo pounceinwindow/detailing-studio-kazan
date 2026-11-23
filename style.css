@@ -92,6 +92,7 @@ h2 { font-size: clamp(31px, 4.2vw, 63px); letter-spacing: -.058em; line-height: 
 .quote-layout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); gap: clamp(24px, 6vw, 85px); }
 .quote-copy p { max-width: 38ch; margin-top: 19px; }
 .quote-layout { align-items: start; }
+.estimate-service { margin-top: 22px; }
 .zone-panel { margin-top: 28px; }
 .zone-panel legend { margin-bottom: 8px; }
 .zone-map {
@@ -161,7 +162,7 @@ h2 { font-size: clamp(31px, 4.2vw, 63px); letter-spacing: -.058em; line-height: 
 .zone-option input:focus-visible + span { outline: 3px solid var(--orange); outline-offset: 2px; }
 .quote-copy .zone-status { margin-top: 7px; font-size: .87rem; }
 .quote form { display: grid; gap: 15px; background: #dbe6f4; border: 1px solid #748aa5; padding: clamp(17px, 3%, 31px); }
-fieldset { border: 0; margin: 0; padding: 0; min-inline-size: 0; }
+fieldset { border: 0; margin-inline: 0; margin-bottom: 0; padding: 0; min-inline-size: 0; }
 legend, .field { font-weight: 700; }
 .choices { display: flex; flex-wrap: wrap; gap: 7px; margin-top: 8px; }
 .choices label { position: relative; cursor: pointer; }

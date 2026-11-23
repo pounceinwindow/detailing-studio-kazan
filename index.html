@@ -6,8 +6,8 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Подбор услуг детейлинга и запрос оценки по автомобилю. Detailing Studio Kazan, Островского, 22.">
   <title>Detailing Studio Kazan · Островского, 22</title>
-  <link rel="stylesheet" href="style.css?v=2">
-  <script src="app.js?v=2" defer></script>
+  <link rel="stylesheet" href="style.css?v=3">
+  <script src="app.js?v=3" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">К содержанию</a>
@@ -44,6 +44,14 @@
         <div class="quote-copy">
           <h2 id="quote-title">Покажите, что&nbsp;нужно сделать</h2>
           <p>Выберите услугу и отметьте нужные зоны. Telegram откроет черновик запроса. Фотографии можно добавить в чате.</p>
+          <fieldset class="estimate-service">
+            <legend>Услуга</legend>
+            <div class="choices">
+              <label><input type="radio" name="service" value="Оклейка плёнкой" form="estimate-form" checked><span>Оклейка</span></label>
+              <label><input type="radio" name="service" value="Полировка кузова" form="estimate-form"><span>Полировка</span></label>
+              <label><input type="radio" name="service" value="Химчистка салона" form="estimate-form"><span>Химчистка</span></label>
+            </div>
+          </fieldset>
           <fieldset form="estimate-form" class="zone-panel" id="zones">
             <legend>Зоны автомобиля</legend>
             <div class="zone-map" id="zone-map" data-view="body">
@@ -54,14 +62,6 @@
           </fieldset>
         </div>
         <form action="https://t.me/Detailing_Studio_Kazan" id="estimate-form">
-          <fieldset>
-            <legend>Услуга</legend>
-            <div class="choices">
-              <label><input type="radio" name="service" value="Оклейка плёнкой" checked><span>Оклейка</span></label>
-              <label><input type="radio" name="service" value="Полировка кузова"><span>Полировка</span></label>
-              <label><input type="radio" name="service" value="Химчистка салона"><span>Химчистка</span></label>
-            </div>
-          </fieldset>
           <label class="field">Марка и модель <input id="model" name="model" required maxlength="90" placeholder="Например, Kia Rio"></label>
           <label class="field">Что нужно сделать <span class="optional">(необязательно)</span><textarea name="details" rows="2" maxlength="320" placeholder="Например, защитить капот и фары"></textarea></label>
           <button type="submit" class="button">Открыть черновик в Telegram <span aria-hidden="true">↗</span></button>
