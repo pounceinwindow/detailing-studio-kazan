@@ -6,8 +6,8 @@
   <meta name="robots" content="noindex, nofollow">
   <meta name="description" content="Подбор услуг детейлинга и запрос оценки по автомобилю. Detailing Studio Kazan, Островского, 22.">
   <title>Detailing Studio Kazan · Островского, 22</title>
-  <link rel="stylesheet" href="style.css">
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="style.css?v=2">
+  <script src="app.js?v=2" defer></script>
 </head>
 <body>
   <a class="skip" href="#content">К содержанию</a>
@@ -21,9 +21,9 @@
     <section class="hero wrap" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="location">Казань, Островского, 22</p>
-        <h1 id="hero-title">Детейлинг<br>и защита<br>автомобиля</h1>
-        <p>Оклейка плёнкой, полировка и уход за салоном. Выберите задачу и узнайте, что подойдёт вашему автомобилю.</p>
-        <a class="button" href="#estimate">Запросить оценку <span aria-hidden="true">↘</span></a>
+        <h1 id="hero-title">Детейлинг и&nbsp;защита автомобиля</h1>
+        <p>Оклейка плёнкой, полировка и химчистка. Отметьте нужные зоны автомобиля, чтобы мастер сразу понял задачу.</p>
+        <a class="button" href="#estimate">Отметить зоны для оценки <span aria-hidden="true">↘</span></a>
       </div>
       <figure class="hero-media">
         <img src="assets/bay.webp" alt="Отражение потолочного света на синем кузове автомобиля" width="1536" height="1024" fetchpriority="high">
@@ -42,8 +42,16 @@
     <section id="estimate" class="quote" aria-labelledby="quote-title">
       <div class="wrap quote-layout">
         <div class="quote-copy">
-          <h2 id="quote-title">Оценка по вашему автомобилю</h2>
-          <p>Выберите услугу и укажите модель. Откроется черновик в Telegram, куда можно добавить фотографии и отправить мастеру.</p>
+          <h2 id="quote-title">Покажите, что&nbsp;нужно сделать</h2>
+          <p>Выберите услугу и отметьте нужные зоны. Telegram откроет черновик запроса. Фотографии можно добавить в чате.</p>
+          <fieldset form="estimate-form" class="zone-panel" id="zones">
+            <legend>Зоны автомобиля</legend>
+            <div class="zone-map" id="zone-map" data-view="body">
+              <div class="zone-car" aria-hidden="true"></div>
+              <div id="zone-options"></div>
+            </div>
+            <p class="zone-status" id="zone-status" aria-live="polite">Можно выбрать несколько зон.</p>
+          </fieldset>
         </div>
         <form action="https://t.me/Detailing_Studio_Kazan" id="estimate-form">
           <fieldset>
