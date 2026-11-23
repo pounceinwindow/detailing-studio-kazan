@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="description" content="Подбор услуг детейлинга и запрос оценки по автомобилю. Detailing Studio Kazan, Островского, 22.">
+  <title>Detailing Studio Kazan · Островского, 22</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#content">К содержанию</a>
+  <header class="top wrap">
+    <a class="wordmark" href="./" aria-label="Detailing Studio Kazan"><i aria-hidden="true"></i><span>DETAILING STUDIO<small>KAZAN</small></span></a>
+    <nav aria-label="Разделы"><a href="#services">Услуги</a><a href="#visit">Адрес</a></nav>
+    <a class="top-contact" href="https://t.me/Detailing_Studio_Kazan">Telegram <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main id="content">
+    <section class="hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="location">Казань, Островского, 22</p>
+        <h1 id="hero-title">Детейлинг<br>и защита<br>автомобиля</h1>
+        <p>Оклейка плёнкой, полировка и уход за салоном. Выберите задачу и узнайте, что подойдёт вашему автомобилю.</p>
+        <a class="button" href="#estimate">Запросить оценку <span aria-hidden="true">↘</span></a>
+      </div>
+      <figure class="hero-media">
+        <img src="assets/bay.webp" alt="Отражение потолочного света на синем кузове автомобиля" width="1536" height="1024" fetchpriority="high">
+      </figure>
+    </section>
+
+    <section class="services wrap" id="services" aria-labelledby="services-title">
+      <h2 id="services-title">Что можно сделать</h2>
+      <div class="service-list">
+        <article><h3>Оклейка плёнкой</h3><p>Защитить кузов и фары прозрачной плёнкой или обсудить смену цвета.</p><a href="#estimate" data-select="Оклейка плёнкой">Выбрать оклейку <span aria-hidden="true">↘</span></a></article>
+        <article><h3>Полировка кузова</h3><p>Обсудить состояние лака и подобрать обработку для кузова.</p><a href="#estimate" data-select="Полировка кузова">Выбрать полировку <span aria-hidden="true">↘</span></a></article>
+        <article><h3>Химчистка салона</h3><p>Описать материал и состояние салона, указать, что нужно почистить.</p><a href="#estimate" data-select="Химчистка салона">Выбрать химчистку <span aria-hidden="true">↘</span></a></article>
+      </div>
+    </section>
+
+    <section id="estimate" class="quote" aria-labelledby="quote-title">
+      <div class="wrap quote-layout">
+        <div class="quote-copy">
+          <h2 id="quote-title">Оценка по вашему автомобилю</h2>
+          <p>Выберите услугу и укажите модель. Откроется черновик в Telegram, куда можно добавить фотографии и отправить мастеру.</p>
+        </div>
+        <form action="https://t.me/Detailing_Studio_Kazan" id="estimate-form">
+          <fieldset>
+            <legend>Услуга</legend>
+            <div class="choices">
+              <label><input type="radio" name="service" value="Оклейка плёнкой" checked><span>Оклейка</span></label>
+              <label><input type="radio" name="service" value="Полировка кузова"><span>Полировка</span></label>
+              <label><input type="radio" name="service" value="Химчистка салона"><span>Химчистка</span></label>
+            </div>
+          </fieldset>
+          <label class="field">Марка и модель <input id="model" name="model" required maxlength="90" placeholder="Например, Kia Rio"></label>
+          <label class="field">Что нужно сделать <span class="optional">(необязательно)</span><textarea name="details" rows="2" maxlength="320" placeholder="Например, защитить капот и фары"></textarea></label>
+          <button type="submit" class="button">Открыть черновик в Telegram <span aria-hidden="true">↗</span></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="visit wrap" id="visit" aria-labelledby="visit-title">
+      <div><h2 id="visit-title">Где находится студия</h2><p>Казань, улица Островского, 22</p></div>
+      <div class="visit-links"><a href="https://yandex.ru/maps/?text=Казань%2C%20улица%20Островского%2C%2022">Открыть карту ↗</a><a href="tel:+79377779842">+7 937 777-98-42</a></div>
+    </section>
+  </main>
+
+  <footer class="wrap"><span>Detailing Studio Kazan</span><a href="https://detailing-studio-kazan.clients.site/">Карточка студии ↗</a><span>Проект страницы · изображение создано для макета</span></footer>
+</body>
+</html>
